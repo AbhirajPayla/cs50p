@@ -2,15 +2,15 @@ file = input("File name: ").lower().strip()
 
 if file.endswith(".gif"):
     print("image/gif")
-elif file.endswith((".jpg", ",jpeg")):
+elif file.endswith((".jpg", ".jpeg")):
     print("image/jpeg")
 elif file.endswith(".png"):
     print("image/png")
 elif file.endswith(".pdf"):
-    print("image/pdf")
+    print("application/pdf")
 elif file.endswith(".txt"):
-    print("image/txt")
+    print("text/plain")
 elif file.endswith(".zip"):
-    print("image/zip")
+    print("application/zip")
 else:
     print("application/octet-stream")
